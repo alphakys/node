@@ -1,9 +1,9 @@
-var events = require('events');
+var event = require('events');
+
+exports.timer = new event();
 
 var sec = 1;
 
-exports.timer = new events();
-
 setInterval(function(){
-    exports.timer.emit('time');
+    exports.timer.emit('timer');
 }, sec*1000);

@@ -1,13 +1,7 @@
 var module = require('./timer');
 
-module.timer.on('time', function(time){
+module.timer.on('timer', ()=>{
+    
     var time = new Date();
-    console.log('now:'+time);
-});
-
-var module = require('./timer');
-
-module.timer.on('time', function(time){
-    var time = new Date();
-    console.log(time);
+    console.log('지금 시간은 '+time);
 })

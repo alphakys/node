@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "call_timer.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mime": "^2.5.2",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon img.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphakys/node.git"
+  },
+  "author": "alphakys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphakys/node/issues"
+  },
+  "homepage": "https://github.com/alphakys/node#readme"
+}

@@ -1,19 +1,21 @@
-var events = require('events');
+var event = require('events');
 
-var emitter = new events();
+var emit = new event();
 
-emitter.on('call', ()=>{
+emit.on('call', ()=>{
     console.log('called events');
+})
+
+emit.emit('call');
+
+
+
+process.on('out', function(time){
+    console.log('', time);
 });
 
-emitter.emit('call');
+setTimeout(function(){
+    console.log('2초 이후 이벤트 종료');
 
-var events = require('events');
-
-var emitter = new events();
-
-emitter.on('time', ()=>{
-    console.log('time함수 on');
-});
-
-emitter.emit('time');
+    process.emit('out', 2);
+}, 2000);
