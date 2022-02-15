@@ -1,3 +1,5 @@
+//merge test;
+
 var fs = require('fs');
 
 var data = '';
